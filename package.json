@@ -1,58 +1,37 @@
 {
-  "name": "child-process-promise",
+  "private": true,
+  "name": "@kinsta/child-process-promise",
   "description": "Simple wrapper around the \"child_process\" module that makes use of promises",
   "main": "index.js",
+  "version": "1.0.0",
   "files": [
-    "lib",
-    "lib-es5",
-    "Readme.md"
+    "lib"
   ],
+  "prettier": "@kinsta/eslint-config/prettier",
   "scripts": {
     "lint": "eslint lib/*js test/*js",
     "test": "npm run mocha",
-    "mocha": "mocha --ui bdd --reporter spec ./test/",
-    "prepublish": "babel lib --out-dir lib-es5"
+    "mocha": "mocha --ui bdd --reporter spec ./test/"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/patrick-steele-idem/child-process-promise.git"
-  },
+  "repository": "https://github.com/kinsta/child-process-promise",
   "keywords": [
     "child",
     "process",
     "promises"
   ],
-  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patrick-steele-idem/child-process-promise/issues"
-  },
+  "author": "Kinsta, Inc. <info@kinsta.com>",
+  "license": "UNLICENSED",
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "cross-spawn": "^4.0.2",
-    "node-version": "^1.0.0",
-    "promise-polyfill": "^6.0.1"
+    "cross-spawn": "^7.0.3",
+    "promise-polyfill": "^8.2.0",
+    "typescript": "^4.2.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.11.4",
-    "babel-plugin-check-es2015-constants": "^6.8.0",
-    "babel-plugin-transform-es2015-block-scoping": "^6.10.1",
-    "babel-preset-es2015": "^6.13.2",
-    "chai": "^3.5.0",
-    "eslint": "^0.10.2",
-    "jshint": "^2.9.1",
-    "mocha": "^2.4.5"
-  },
-  "version": "2.2.0",
-  "babel": {
-    "presets": [
-      "es2015"
-    ],
-    "plugins": [
-      "check-es2015-constants",
-      "transform-es2015-block-scoping"
-    ]
+    "chai": "^4.3.4",
+    "eslint": "^7.25.0",
+    "mocha": "^8.3.2"
   }
 }
