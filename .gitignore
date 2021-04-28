@@ -1,12 +1,12 @@
-*.iml
-.DS_Store
+# editors
 .idea
-*.log
-temp
+.vscode/*
+
+# nodejs
 node_modules
-pids
-reports
-target
-docs
-logs
-lib-es5
+package-lock.json*
+npm-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store

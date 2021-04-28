@@ -10,10 +10,11 @@
   "prettier": "@kinsta/eslint-config/prettier",
   "scripts": {
     "lint": "eslint lib/*js test/*js",
-    "test": "npm run mocha",
-    "mocha": "mocha --ui bdd --reporter spec ./test/"
+    "test": "jest",
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
-  "repository": "https://github.com/kinsta/child-process-promise",
+  "repository": "https://github.com/kinsta/child-process-promise.git",
   "keywords": [
     "child",
     "process",
@@ -25,13 +26,15 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "cross-spawn": "^7.0.3",
-    "promise-polyfill": "^8.2.0",
-    "typescript": "^4.2.4"
+    "cross-spawn": "^7.0.3"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "@kinsta/eslint-config": "^2.0.2",
     "eslint": "^7.25.0",
-    "mocha": "^8.3.2"
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "semantic-release": "^17.4.2"
   }
 }
