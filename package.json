@@ -31,9 +31,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cross-spawn": "^4.0.2",
-    "node-version": "^1.0.0",
-    "promise-polyfill": "^6.0.1"
+    "cross-spawn": "^7.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
